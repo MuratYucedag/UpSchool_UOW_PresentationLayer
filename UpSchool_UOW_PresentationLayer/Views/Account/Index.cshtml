@@ -1,0 +1,21 @@
+﻿@model AccountViewModel
+
+@{
+    Layout = null;
+}
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+<div class="container">
+    <br />
+    <form method="post">
+        <label>Gönderici ID</label>
+        <input type="text" asp-for="SenderID" class="form-control" />
+        <br />
+        <label>Alıcı ID</label>
+        <input type="text" asp-for="ReceiverID" class="form-control" />
+        <br />
+        <label>Gönderilecek Tutar</label>
+        <input type="text" asp-for="Amount" class="form-control" />
+        <br />
+        <button class="btn btn-outline-warning">Para Gönder</button>
+    </form>
+</div>
